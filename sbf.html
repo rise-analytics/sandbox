@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+        
     <!-- Google Tag Manager -->
         <script>
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
@@ -9,22 +11,36 @@
         })(window,document,'script','dataLayer','GTM-W3FTNZN');
         </script>
     <!-- End Google Tag Manager -->
+        
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>SandBox Form Page</title>  
     </head>
     <body>
-        <form action="#">
-            <input id="fname" type="text" name="firstname" placeholder="First Name" required><br>
+        <script>
+            function myFunction() {
+                alert("Form Submitted");
+                
+            window.dataLayer = window.dataLayer || []
+            dataLayer.push({
+                'event':'Form Submission'
+            })
+        }
+        </script>
+        
+        <form action="#" onsubmit="myFunction()" target="_blank">
+            <input type="text" placeholder="First Name" required><br>
             <br>
-            <input id="lname" type="text" name="lastname" placeholder="Last Name" required><br>
+            <input type="text" placeholder="Last Name" required><br>
             <br>
             <input type="submit" value="Submit">
         </form>
     </body>
+    
     <!-- Google Tag Manager (noscript) -->
         <noscript>
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3FTNZN" height="0" width="0" style="display:none;visibility:hidden"></iframe>
         </noscript>
     <!-- End Google Tag Manager (noscript) -->
+    
 </html>
